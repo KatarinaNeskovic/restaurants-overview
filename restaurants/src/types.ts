@@ -1,11 +1,11 @@
 export interface IData {
-  metaData: unknown;
+  metaData?: unknown;
   restaurants: IRestaurant[];
-  deliveryFees: unknown;
-  promotedPlacement: unknown;
-  filters: unknown;
-  layout: unknown;
-  enrichedLists: unknown;
+  deliveryFees?: unknown;
+  promotedPlacement?: unknown;
+  filters?: unknown;
+  layout?: unknown;
+  enrichedLists?: unknown;
 }
 
 export interface IRestaurant
