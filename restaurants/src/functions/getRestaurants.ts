@@ -8,6 +8,13 @@ export function getRestaurants(data: IData): IRestaurant[] {
         firstLine: el.address.firstLine,
         city: el.address.city,
         postalCode: el.address.postalCode,
+        location: {
+          coordinates: {
+            x: el.address.location.coordinates.x,
+            y: el.address.location.coordinates.y,
+          },
+          type: el.address.location.type,
+        },
       },
       cuisines: el.cuisines.map((e) => ({ name: e.name })),
       rating: {
