@@ -11,6 +11,11 @@ describe("Test getRestaurants function ", () => {
             city: "Belfast",
             firstLine: "Norwich 25",
             postalCode: "emc2",
+            location: {
+              coordinates: {x:-3.5, y:10},
+              type: 'Point'
+            }
+
           },
           cuisines: [{ name: "thai" }, { name: "pizza" }, { name: "burger" }],
           name: "Johnnys",
@@ -21,6 +26,10 @@ describe("Test getRestaurants function ", () => {
             city: "London",
             firstLine: "Lane 3",
             postalCode: "2245",
+            location: {
+              coordinates: {x:-4, y:5},
+              type: 'Point'
+            }
           },
           cuisines: [{ name: "vegan" }, { name: "burger" }, { name: "salad" }],
           name: "Johnnys",
@@ -31,6 +40,10 @@ describe("Test getRestaurants function ", () => {
             city: "Brighton",
             firstLine: "Bedford 345",
             postalCode: "2345",
+            location: {
+              coordinates: {x:12, y:15},
+              type: 'Point'
+            }
           },
           cuisines: [
             { name: "japanese" },
@@ -54,6 +67,11 @@ describe("Test getRestaurants function ", () => {
           city: "Belfast",
           firstLine: "Norwich 25",
           postalCode: "emc2",
+          location: {
+            coordinates: {x:-3.5, y:10},
+            type: 'Point'
+          }
+
         },
         cuisines: [{ name: "thai" }, { name: "pizza" }, { name: "burger" }],
         name: "Johnnys",
@@ -64,6 +82,10 @@ describe("Test getRestaurants function ", () => {
           city: "London",
           firstLine: "Lane 3",
           postalCode: "2245",
+          location: {
+            coordinates: {x:-4, y:5},
+            type: 'Point'
+          }
         },
         cuisines: [{ name: "vegan" }, { name: "burger" }, { name: "salad" }],
         name: "Johnnys",
@@ -74,8 +96,16 @@ describe("Test getRestaurants function ", () => {
           city: "Brighton",
           firstLine: "Bedford 345",
           postalCode: "2345",
+          location: {
+            coordinates: {x:12, y:15},
+            type: 'Point'
+          }
         },
-        cuisines: [{ name: "japanese" }, { name: "sushi" }, { name: "fusion" }],
+        cuisines: [
+          { name: "japanese" },
+          { name: "sushi" },
+          { name: "fusion" },
+        ],
         name: "Johnnys",
         rating: { starRating: 4.8 },
       },
