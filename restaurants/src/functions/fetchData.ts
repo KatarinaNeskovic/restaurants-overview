@@ -1,5 +1,5 @@
 import { getRestaurants } from "./getRestaurants";
-import { IRestaurant } from "./types";
+import { IRestaurant } from "../types/types";
 
 const apiUrl: string =
   "https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/CF118AZ";

@@ -1,5 +1,5 @@
-import { getRestaurants } from "../getRestaurants";
-import { IData } from "../types";
+import { getRestaurants } from "../functions/getRestaurants";
+import { IData } from "../types/types";
 
 describe("Test getRestaurants function ", () => {
   test("getting an array of restaurants with id,name,address and rating", () => {

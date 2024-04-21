@@ -1,4 +1,4 @@
-import type { IData, IRestaurant } from "./types";
+import type { IData, IRestaurant } from "../types/types";
 
 export function getRestaurants(data: IData): IRestaurant[] {
   const result = data.restaurants.map((el) => {
@@ -9,8 +9,7 @@ export function getRestaurants(data: IData): IRestaurant[] {
         city: el.address.city,
         postalCode: el.address.postalCode,
       },
-      cuisines: el.cuisines.map((e) => 
-        ({name:e.name})),
+      cuisines: el.cuisines.map((e) => ({ name: e.name })),
       rating: {
         starRating: el.rating.starRating,
       },
