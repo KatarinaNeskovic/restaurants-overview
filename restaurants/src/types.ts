@@ -8,8 +8,7 @@ export interface IData {
   enrichedLists?: unknown;
 }
 
-export interface IRestaurant
- {
+export interface IRestaurant {
   name: string;
   cuisines: ICuisine[];
   rating: IRating;
@@ -24,12 +23,12 @@ export interface IAddress {
 }
 
 export interface IRating {
-    count?:number;
-    starRating: number;
-    userRating?: number;
+  count?: number;
+  starRating: number;
+  userRating?: number;
 }
 
 export interface ICuisine {
-    name:string;
-    uniqueName?:string;
+  name: string;
+  uniqueName?: string;
 }
