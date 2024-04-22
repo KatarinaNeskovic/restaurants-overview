@@ -10,7 +10,7 @@ export const Card: React.FC<Props> = ({ restaurant }) => {
 
   return (
     <div className="card">
-      <div className="name"> Name: {name} </div>
+      <label className="name"> Name: {name} </label >
       <div className="rating"> Rating: {rating.starRating} </div>
       <div className="cuisines">
         {" "}

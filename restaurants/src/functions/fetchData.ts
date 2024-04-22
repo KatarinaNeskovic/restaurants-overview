@@ -5,7 +5,7 @@ const apiUrl: string =
   "https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/CF118AZ";
 
 export async function fetchData(): Promise<IRestaurant[]> {
-  const response = await fetch(apiUrl)
+    const response = await fetch(apiUrl)
     .then((res) => {
       if (!res.ok) {
         throw new Error("Error fetching data");
@@ -15,7 +15,13 @@ export async function fetchData(): Promise<IRestaurant[]> {
     .catch((error) => {
       throw new Error("An error occured while fetching data" + error.message);
     });
+
   const restaurantData: IRestaurant[] = getRestaurants(response);
 
   return restaurantData.slice(0, 10);
 }
+
+/* // , {
+  mode: 'no-cors',
+  method:'GET',
+  } */
