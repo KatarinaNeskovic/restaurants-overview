@@ -17,5 +17,5 @@ export async function fetchData(): Promise<IRestaurant[]> {
     });
   const restaurantData: IRestaurant[] = getRestaurants(response);
 
-  return restaurantData.slice(0, 11);
+  return restaurantData.slice(0, 10);
 }
