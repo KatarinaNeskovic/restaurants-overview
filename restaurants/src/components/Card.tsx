@@ -1,4 +1,5 @@
 import { IRestaurant } from "../types/types";
+import "./Card.css";
 
 interface Props {
   restaurant: IRestaurant;
@@ -10,27 +11,26 @@ export const Card: React.FC<Props> = ({ restaurant }) => {
 
   return (
     <div className="card">
-      <label className="name"> Name: {name} </label >
-      <div className="rating"> Rating: {rating.starRating} </div>
-      <div className="cuisines">
-        {" "}
-        Cuisines: {cuisines.map((c) => c.name).join(", ")}{" "}
-      </div>
-      <div className="address">
-        {" "}
-        Address:
-        <ul>
-          <li> Street: {firstLine} </li>
-          <li> City: {city} </li>
-          <li> Postal Code: {postalCode} </li>
-          <li>
-            {" "}
-            Location:
-            <ul> {type}</ul>
-            <ul> {[coordinates].join(", ")}</ul>
-          </li>
-        </ul>{" "}
-      </div>
+      <b> Name: </b> {name} <br /> <br />
+      <b> Rating: </b> {rating.starRating} <br /> <br />
+      <b> Cuisines: </b> {cuisines.map((c) => c.name).join(", ")} <br /> <br />
+      <b> Address: </b>
+      <ul>
+        <li> Street: {firstLine} </li>
+        <li> Postal Code: {postalCode} </li>
+        <li> City: {city} </li>
+        <li>
+          {" "}
+          Location:
+          <ul>
+            <li> Type: {type} </li>
+            <li>
+              {" "}
+              Coordinates: <br /> {coordinates[0]}, {coordinates[1]}
+            </li>
+          </ul>{" "}
+        </li>
+      </ul>
     </div>
   );
 };

@@ -9,10 +9,7 @@ export function getRestaurants(data: IData): IRestaurant[] {
         city: el.address.city,
         postalCode: el.address.postalCode,
         location: {
-          coordinates: {
-            x: el.address.location.coordinates.x,
-            y: el.address.location.coordinates.y,
-          },
+          coordinates: el.address.location.coordinates,
           type: el.address.location.type,
         },
       },

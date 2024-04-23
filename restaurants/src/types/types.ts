@@ -35,10 +35,5 @@ export interface ICuisine {
 
 export interface ILocation {
   type:string,
-  coordinates: ICoordinates
+  coordinates: [number,number]
 }
-
- export interface ICoordinates {
-  x:number,
-  y:number
-} 
