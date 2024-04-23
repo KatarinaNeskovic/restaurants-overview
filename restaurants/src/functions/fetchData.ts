@@ -21,7 +21,4 @@ export async function fetchData(): Promise<IRestaurant[]> {
   return restaurantData.slice(0, 10);
 }
 
-/* // , {
-  mode: 'no-cors',
-  method:'GET',
-  } */
+
