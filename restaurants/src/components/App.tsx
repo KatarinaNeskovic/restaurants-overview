@@ -19,7 +19,7 @@ const Restaurants = () => {
     <div>
       <div className="header">
         <img src={Logo} className="logo"/> 
-      <h1> TAKEAWAY RESTAURANT OVERVIEW </h1>
+      <h1> RESTAURANTS OVERVIEW </h1>
       </div>
       <div className="card-container">
         {restaurants.map((restaurant, index) => (

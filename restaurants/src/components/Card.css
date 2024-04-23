@@ -12,7 +12,7 @@
   border: 2px solid rgb(255, 128, 0);
   background-color: white;
   border-radius: 20px;
-  box-shadow: 1px 1px 4px  rgb(36, 46, 48);;
+  box-shadow: 1px 1px 4px rgb(36, 46, 48);
   width: 400px;
   height: 400px;
   padding: 20px;
@@ -22,11 +22,10 @@
 .header {
   display: flex;
   justify-content: center;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-
 .logo {
- width: 30px;
- height:30px;
+  width: 30px;
+  height: 30px;
 }
