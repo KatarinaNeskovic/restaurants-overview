@@ -17,10 +17,9 @@ const Restaurants = () => {
 
   return (
     <div>
-      <div className="header">
+     
         <img src={Logo_w} className="logo"/> 
       <h1> RESTAURANTS OVERVIEW </h1>
-      </div>
       <div className="card-container">
         {restaurants.map((restaurant, index) => (
           <Card key={index} restaurant={restaurant} />
