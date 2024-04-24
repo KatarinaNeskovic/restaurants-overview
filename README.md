@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+# Restaurants Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created with React + Vite + TypeScript
 
-Currently, two official plugins are available:
+## Prerequisites:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Ensure you are using Node version >=20.0.0.
 
-## Expanding the ESLint configuration
+2. To bypass CORS Policy block you can use browser extension. I used [ALLOW CORS] (https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1) for Google Chrome
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting started
 
-- Configure the top-level `parserOptions` property like this:
+1. **Navigate to the Project Directory:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+   - Open a terminal or command prompt and navigate to the directory where you saved the project files.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+     cd restaurants-overview
+
+2. **Install Dependencies:**
+   -BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
+
+   npm install
+
+3. **Serving,testing and building:**
+
+   npm run dev (open browser and navigate to `http://localhost:5173/`)
+   npm run test
+   npm run build
+
+You should be all set!
+
+## Assumptions
+
+1. The *name* property of objects in the *cuisines* array also returns 'Low Delivery Fee', 'Deals' and/or 'Collect stamps' for some objects, which seems unrelated to other *name* properties such as 'Noodles', 'Chinese' or 'Halal' that directly refer to food. I assumed they are nevertheless all required to be displayed as part of the requested data point *cuisines*. 
+
+2. For the *rating* object I assumed only the *starRating* property should be displayed.
+
+3. For the *address* object, I assumed that the *location* property should also be displayed.
+
+## Improvement potential 
+
+1. Sorting: The list of restaurants could be displayed according to the starRating - from highest to lowest. Alternatively, the restaurants could also be displayed in the alphabetical order. 
+
+2. Filtering: Adding an option to filter restaurants by criteria such as 
+- specific food type (i.e 'pizza') 
+- offering deals
+- rating above a certain number
+etc.
+
+3. UI: 
+- Adding clipboard functionality to each card, so the user can copy data to clipboard
+- Adding a short animation on load so users know data is being fetched and not missing
