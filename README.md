@@ -19,6 +19,7 @@ Open a terminal or command prompt and navigate to the directory where you saved 
      cd restaurants-overview
 
 2. **Install Dependencies:**
+
    BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
 
    npm install
