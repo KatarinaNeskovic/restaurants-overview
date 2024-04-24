@@ -8,7 +8,7 @@ The task: Using the API provided send a postcode to return a set of data. Filter
 
 1. Ensure you are using Node version >=20.0.0.
 
-2. To bypass CORS Policy block you can use browser extension. I used ALLOW CORS for Google Chrome: https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1
+2. By default the requests to the external API will be blocked by the browser CORS policy, so the user needs to add a browser extension, or start the browser in no cors mode. For the prupose of this project, I decided against using a local or third party proxy (like https://corsproxy.io/) to avoid adding aditional dependencies. I used ALLOW CORS for Google Chrome: https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1
 
 ## Getting started
 
