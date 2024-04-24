@@ -8,7 +8,7 @@ The task: Using the API provided send a postcode to return a set of data. Filter
 
 1. Ensure you are using Node version >=20.0.0.
 
-2. To bypass CORS Policy block you can use browser extension. I used [ALLOW CORS] (https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1) for Google Chrome
+2. To bypass CORS Policy block you can use browser extension. I used ALLOW CORS for Google Chrome: https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?pli=1
 
 ## Getting started
 
@@ -19,7 +19,7 @@ Open a terminal or command prompt and navigate to the directory where you saved 
      cd restaurants-overview
 
 2. **Install Dependencies:**
-  BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
+   BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
 
    npm install
 
@@ -33,22 +33,24 @@ You should be all set!
 
 ## Assumptions
 
-1. The *name* property of objects in the *cuisines* array also returns 'Low Delivery Fee', 'Deals' and/or 'Collect stamps' for some objects, which seems unrelated to other *name* properties such as 'Noodles', 'Chinese' or 'Halal' that directly refer to food. I assumed they are nevertheless all required to be displayed as part of the requested data point *cuisines*. 
+1. The _name_ property of objects in the _cuisines_ array also returns 'Low Delivery Fee', 'Deals' and/or 'Collect stamps' for some objects, which seems unrelated to other _name_ properties such as 'Noodles', 'Chinese' or 'Halal' that directly refer to food. I assumed they are nevertheless all required to be displayed as part of the requested data point _cuisines_.
 
-2. For the *rating* object I assumed only the *starRating* property should be displayed.
+2. For the _rating_ object I assumed only the _starRating_ property should be displayed.
 
-3. For the *address* object, I assumed that the *location* property should also be displayed.
+3. For the _address_ object, I assumed that the _location_ property should also be displayed.
 
-## Improvement potential 
+## Improvement potential
 
-1. Sorting: The list of restaurants could be displayed according to the starRating - from highest to lowest. Alternatively, the restaurants could also be displayed in the alphabetical order. 
+1. Sorting: The list of restaurants could be displayed according to the starRating - from highest to lowest. Alternatively, the restaurants could also be displayed in the alphabetical order.
 
-2. Filtering: Adding an option to filter restaurants by criteria such as 
-- specific food type (i.e 'pizza') 
+2. Filtering: Adding an option to filter restaurants by criteria such as
+
+- specific food type (i.e 'pizza')
 - offering deals
 - rating above a certain number
-etc.
+  etc.
 
-3. UI: 
-- Adding clipboard functionality to each card, so the user can copy data to clipboard
+3. UI:
+
+- Adding clipboard functionality to each card, so the user can easily copy data
 - Adding a short animation on load so users know data is being fetched and not missing
