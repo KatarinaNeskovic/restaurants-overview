@@ -1,6 +1,8 @@
 # Restaurants Overview
 
-This project was created with React + Vite + TypeScript
+This project was created with React + Vite + TypeScript.
+
+The task: Using the API provided send a postcode to return a set of data. Filter returned data to get only the first 10 restaurants and for each restaurant display name, cuisines, rating as a number and address.
 
 ## Prerequisites:
 
@@ -12,20 +14,20 @@ This project was created with React + Vite + TypeScript
 
 1. **Navigate to the Project Directory:**
 
-   - Open a terminal or command prompt and navigate to the directory where you saved the project files.
+Open a terminal or command prompt and navigate to the directory where you saved the project files.
 
      cd restaurants-overview
 
 2. **Install Dependencies:**
-   -BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
+  BEFORE YOU INSTALL: Please read the Prerequisites section above. Run the following command to install the required dependencies:
 
    npm install
 
 3. **Serving,testing and building:**
 
-   npm run dev (open browser and navigate to `http://localhost:5173/`)
-   npm run test
-   npm run build
+   - npm run dev (open browser and navigate to `http://localhost:5173/`)
+   - npm run test
+   - npm run build
 
 You should be all set!
 
