@@ -9,7 +9,7 @@
 
 .card {
   font-size: 18px;
-  border: 2px solid white/* rgb(255, 128, 0) */;
+  border: 2px solid rgb(185, 149, 149)/* rgb(255, 128, 0) */;
   background-color: whitesmoke;
   border-radius: 20px;
   box-shadow: 1px 1px 4px rgb(36, 46, 48);
