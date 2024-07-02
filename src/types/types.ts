@@ -34,6 +34,6 @@ export interface ICuisine {
 }
 
 export interface ILocation {
-  type:string,
-  coordinates: [number,number]
+  type: string;
+  coordinates: [number, number];
 }
